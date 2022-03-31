@@ -1,0 +1,16 @@
+https://www.bluematador.com/learn/aws-cli-cheatsheet
+
+aws iam list-user-policies
+aws iam list-attached-user-policies
+aws iam list-groups-for-user
+aws iam list-group-policies
+aws iam list-attached-group-policies
+
+aws iam list-attached-user-policies --user-name <IAM-USER> --profile <PROFILE>
+aws configservice describe-config-rules --profile <PROFILE>
+aws iam list-user-policies --user-name <IAM-USER> --profile <PROFILE>
+aws iam put-user-policy --user-name YOUR_USERNAME --policy-name YOUR_POLICY_NAME --policy-document file://read-dynamodb.json
+aws iam get-policy --policy-arn arn:aws:iam::<ACCT-ID>:policy/<POLICY-NAME> --profile <PROFILE>
+aws iam get-policy-version --policy-arn arn:aws:iam::<ACCT-ID>:policy/<POLICY-NAME> --profile <PROFILE> --version-id v<ID>
+
+https://docs.aws.amazon.com/cli/latest/reference/organizations/update-policy.html
